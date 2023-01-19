@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pass.css">
+    <title>password</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form action="" class="form" id="form">
+            <div class="form-control">
+                <label for=""></label>
+                <input  type="password" id="Password">
+                <i>f</i>
+                <i>h</i>
+                <small>Error message</small>
+            </div>
+<div class="but">
+    <button class="submit" id="button1" type="submit"> submit</button>
+</div>
+        </form>
+    </div>
+
+    <script>
+        let form = document.getElementById('form');
+        let password = document.getElementById('Password');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            checkInput()
+        })
+
+        function checkInput(){
+            let passwordValue = password.value.trim()
+
+if(passwordValue === ""){
+    // show error
+    // add error class
+setErrorFor(password, 'username cannot be blank')
+
+} 
+else {
+    // add success class
+    setSuccessFor(password);
+}
+
+function setErrorFor(input,message){
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+
+    small.innerText = message;
+
+    formControl.className = 'form-control error';
+}
+
+function setSuccessFor(input){
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+    formControl.className = 'but bb'
+
+    
+}
+        }
+
+var text1 = document.getElementById("Password");
+var butt1 = document.getElementById('button1');
+
+text1.addEventListener('keyup' , function(){
+if (text1.value == null || text1.value == ""){
+butt1.style.backgroundColor = 'yellow';
+}
+
+else{
+    butt1.style.backgroundColor = 'red';
+    document.getElementById('button1') = ""
+
+}
+
+});
+
+
+    </script>
+
+    
+</body>
+</html>
