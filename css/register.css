@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+.emoji{
+    background-image: url('../images/ppl.jpeg');
+    height: 41rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    /* -webkit-filter: blur(5px);
+    filter: blur(5px); */
+}
+
+.container{
+margin-left: 60rem;
+    margin-top: -600px;
+}
+
+.register{
+margin-left: -130px;
+font-size: 45px;
+color: rgb(20, 20, 19);
+}
+
+
+.input-field {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: -100px;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+select {
+    margin-top: 30px;
+    margin-left: -100px;
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid black;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.off{
+    text-align: center;
+    color: rgb(131, 125, 125);
+}
+
+
+
+.input-field::placeholder{
+    text-align: center;
+    font-style: italic;
+}
+
+.form-box{
+    margin-top: 50px;
+}
+
+button{
+    margin-top: 30px;
+    width: 40%;
+    height: 30px;
+    border: none;
+    margin-left: -10px;
+    color: #fff;
+    background-color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,144 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;  
+}
+
+nav{
+    background-color: yellowgreen;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0 0 20px;
+}
+
+nav img{
+    width: 40px;
+ 
+} 
+
+nav h2{
+    font-size: 38px;
+    color: rgb(119, 77, 5);
+    padding-right: 630px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wel{
+    text-align: center;
+    font-size: 50px;
+padding-top: 180px;
+    background: -webkit-linear-gradient(#000, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .wel {
+    width: 100%;
+    animation-duration: 3s;
+    animation-name: up;
+  }
+
+  @keyframes up {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -10%, 0);
+      background: linear-gradient(rgb(243, 7, 7), gold);
+      -webkit-background-clip: text;
+    }
+
+    100% {
+      background: linear-gradient(rgb(117, 182, 191), rgb(223, 236, 43));
+      -webkit-background-clip: text;
+    }
+  }
+
+
+
+.content{
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.content input{
+    margin-top: 480px;
+    margin-left: -250px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: darkgreen;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-family: cursive;
+}
+
+.organise{
+    margin-top: 120px;
+    align-items: center;
+display: flex;
+    justify-content: center;
+}
+
+.organise h1{
+    font-size: 50px;
+    color: black;
+    font-family: fantasy;
+}
+
+.organise input{
+    margin-top: 48px;
+    margin-left: 170px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: darkgreen;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-family: cursive;
+}
+
+.organise p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(210, 75, 30);
+    margin-left: 100px;
+    font-family: cursive;
+}
+
+
+footer{
+    margin-top:70px;
+}
+
+footer ul{
+    float: right;
+    margin-right: 30px;
+
+  }
+
+
+ footer li {
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 10px;
+  }
+  
+
+ 
+
+footer a {
+    text-decoration: none;
+    font-size: 21px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: #000;
+  }
